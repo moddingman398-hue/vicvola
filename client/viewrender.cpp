@@ -2071,8 +2071,17 @@ void CViewRender::RenderView(const CViewSetup& view, int nClearFlags, int whatTo
 
 	m_UnderWaterOverlayMaterial.Shutdown();					// underwater view will set
 
-	m_CurrentView = view;
+	// Copy the input view into a mutable one
+	CViewSetup adsView(view);
 
+	// Tick ADS each frame
+	MB_UpdateADS(gpGlobals->frametime);
+
+	// Adjust FOV with ADS
+	adsView.fov = MB_ComputeADSFOV(view.fov);
+
+	// Keep m_CurrentView in sync (important for HUD, crosshair, etc.)
+	m_CurrentView = adsView;
 	C_BaseAnimating::AutoAllowBoneAccess boneaccess(true, true);
 	VPROF("CViewRender::RenderView");
 	tmZone(TELEMETRY_LEVEL0, TMZF_NONE, "%s", __FUNCTION__);

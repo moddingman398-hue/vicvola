@@ -212,15 +212,6 @@
   improv_melee_pickup.cpp
   info_camera_link.cpp
   info_overlay_accessor.cpp
-C:\Xblah\content\Mapbase\vicvola\src\game\server\improv_melee_pickup.cpp(9,82): error C2039: 'Weapon_GetWeaponByType': is not a member of 'CBasePlayer'
-C:\Xblah\content\Mapbase\vicvola\src\game\server\improv_melee_pickup.h(3): message : see declaration of 'CBasePlayer'
-C:\Xblah\content\Mapbase\vicvola\src\game\server\improv_melee_pickup.cpp(9,131): error C2065: 'CreateNoSpawn': undeclared identifier
-C:\Xblah\content\Mapbase\vicvola\src\game\server\improv_melee_pickup.cpp(9,145): error C2275: 'CBaseCombatWeapon': illegal use of this type as an expression
-C:\Xblah\content\Mapbase\vicvola\src\game\shared\gamerules.h(36): message : see declaration of 'CBaseCombatWeapon'
-C:\Xblah\content\Mapbase\vicvola\src\game\server\improv_melee_pickup.cpp(12,61): error C2660: 'IPhysicsObject::GetMass': function does not take 1 arguments
-C:\Xblah\content\Mapbase\vicvola\src\public\vphysics_interface.h(739,18): message : see declaration of 'IPhysicsObject::GetMass' (compiling source file improv_melee_pickup.cpp)
-C:\Xblah\content\Mapbase\vicvola\src\game\server\improv_melee_pickup.cpp(13,8): error C2039: 'SetCustomDamage': is not a member of 'CBaseCombatWeapon'
-C:\Xblah\content\Mapbase\vicvola\src\game\shared\gamerules.h(36): message : see declaration of 'CBaseCombatWeapon'
   intermission.cpp
   item_world.cpp
   lightglow.cpp
@@ -251,13 +242,9 @@ C:\Xblah\content\Mapbase\vicvola\src\game\shared\gamerules.h(36): message : see 
   npc_damageresponse.cpp
   npc_gibbing_ext.cpp
   npc_vehicledriver.cpp
-C:\Xblah\content\Mapbase\vicvola\src\game\server\npc_damageresponse.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   obstacle_pushaway.cpp
   particle_light.cpp
-C:\Xblah\content\Mapbase\vicvola\src\game\server\npc_gibbing_ext.cpp(17,56): error C2039: 'ScheduleFromName': is not a member of 'CAI_BaseNPC'
-C:\Xblah\content\Mapbase\vicvola\src\game\server\ai_basenpc.h(3460): message : see declaration of 'CAI_BaseNPC'
-C:\Xblah\content\Mapbase\vicvola\src\game\server\npc_gibbing_ext.cpp(21,60): error C2039: 'ScheduleFromName': is not a member of 'CAI_BaseNPC'
-C:\Xblah\content\Mapbase\vicvola\src\game\server\ai_basenpc.h(3460): message : see declaration of 'CAI_BaseNPC'
+C:\Xblah\content\Mapbase\vicvola\src\game\server\npc_damageresponse.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   particle_parse.cpp
   particle_system.cpp
   particlesystemquery.cpp
@@ -365,7 +352,6 @@ C:\Xblah\content\Mapbase\vicvola\src\game\server\ai_basenpc.h(3460): message : s
   util_shared.cpp
   variant_t.cpp
   vault_slide_movement.cpp
-C:\Xblah\content\Mapbase\vicvola\src\game\server\vault_slide_movement.cpp(17,26): error C2065: 'IN_DUCK': undeclared identifier
   vehicle_base.cpp
   vehicle_baseserver.cpp
   vehicle_choreo_generic.cpp
@@ -628,3 +614,37 @@ C:\Xblah\content\Mapbase\vicvola\src\game\server\vault_slide_movement.cpp(17,26)
   usermessages.cpp
   entity_tools_server.cpp
   toolframework_server.cpp
+  bone_setup.cpp
+  collisionutils.cpp
+  dt_send.cpp
+  dt_utlvector_common.cpp
+  dt_utlvector_send.cpp
+  editor_sendcommand.cpp
+  filesystem_helpers.cpp
+  gamehandle.cpp
+  GameStats_BasicStatsFunctions.cpp
+  h_export.cpp
+  init_factory.cpp
+  interpolatortypes.cpp
+  keyframe.cpp
+  language.cpp
+  map_utils.cpp
+  memoverride.cpp
+  networkvar.cpp
+  randoverride.cpp
+  registry.cpp
+  rope_physics.cpp
+  scratchpad3d.cpp
+  ScratchPadUtils.cpp
+  server_class.cpp
+  sheetsimulator.cpp
+  simple_physics.cpp
+  stringregistry.cpp
+  studio.cpp
+  ep1_gamestats.cpp
+  ep2_gamestats.cpp
+     Creating library .\Release_mod_episodic\server.lib and object .\Release_mod_episodic\server.exp
+  server_episodic.vcxproj -> C:\Xblah\content\Mapbase\vicvola\src\game\server\Release_mod_episodic\server.dll
+  Publishing to C:\Program Files (x86)\Steam\steamapps\sourcemods\vicvola\bin\.
+          1 file(s) copied.
+          1 file(s) copied.

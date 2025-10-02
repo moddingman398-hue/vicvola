@@ -393,6 +393,7 @@ exit 1
     <ClInclude Include="..\shared\weapon_base_fa.h" />
     <ClInclude Include="..\shared\weapon_pistol_fa.h" />
     <ClInclude Include="..\shared\weapon_smg_fa.h" />
+    <ClInclude Include="c_ads_helpers.h" />
     <ClInclude Include="c_player_legs.h" />
     <ClInclude Include="fa_kick_input.h" />
     <ClInclude Include="game_controls\baseviewport.h" />
@@ -906,6 +907,7 @@ exit 1
     <ClCompile Include="cl_freeaim_firstperson.cpp" />
     <ClCompile Include="cl_freeaim_integration.cpp" />
     <ClCompile Include="c_ads_helpers.cpp" />
+    <ClCompile Include="c_ads_input_glue.cpp" />
     <ClCompile Include="c_inventory_panel.cpp" />
     <ClCompile Include="c_sse_manager.cpp" />
     <ClCompile Include="fa_kick_input.cpp" />

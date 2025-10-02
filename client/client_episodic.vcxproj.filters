@@ -1968,6 +1968,7 @@
     <ClInclude Include="c_player_legs.h" />
     <ClInclude Include="..\shared\melee_classes.h" />
     <ClInclude Include="..\shared\re4_inventory.h" />
+    <ClInclude Include="c_ads_helpers.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mp3player.cpp">
@@ -3605,6 +3606,7 @@
     <ClCompile Include="c_inventory_panel.cpp" />
     <ClCompile Include="c_sse_manager.cpp" />
     <ClCompile Include="..\shared\re4_inventory.cpp" />
+    <ClCompile Include="c_ads_input_glue.cpp" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
