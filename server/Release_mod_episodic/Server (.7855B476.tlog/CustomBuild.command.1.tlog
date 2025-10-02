@@ -1,0 +1,6 @@
+^C:\XBLAH\CONTENT\MAPBASE\VICVOLA\SRC\PUBLIC\TIER0\POINTEROVERRIDE.ASM
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\ml.exe" /safeseh /c /Cp /Zi /Fo".\Release_mod_episodic\\pointeroverride.obj" "C:\Xblah\content\Mapbase\vicvola\src\public\tier0\pointeroverride.asm"
+^C:\XBLAH\CONTENT\MAPBASE\VICVOLA\SRC\GAME\SERVER\SERVER_EPISODIC.VPC
+if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "server_episodic.vcxproj"
+if ERRORLEVEL 1 exit /b 1
+echo crc_complete > C:\Xblah\content\Mapbase\vicvola\src\game\server\server_episodic.vpc.sentinel
