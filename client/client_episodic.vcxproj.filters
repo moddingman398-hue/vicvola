@@ -1966,6 +1966,8 @@
     <ClInclude Include="fa_kick_input.h" />
     <ClInclude Include="..\shared\player_legs.h" />
     <ClInclude Include="c_player_legs.h" />
+    <ClInclude Include="..\shared\melee_classes.h" />
+    <ClInclude Include="..\shared\re4_inventory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mp3player.cpp">
@@ -3599,6 +3601,10 @@
     <ClCompile Include="fa_kick_input.cpp" />
     <ClCompile Include="hud_crosshair_override.cpp" />
     <ClCompile Include="c_player_legs.cpp" />
+    <ClCompile Include="c_ads_helpers.cpp" />
+    <ClCompile Include="c_inventory_panel.cpp" />
+    <ClCompile Include="c_sse_manager.cpp" />
+    <ClCompile Include="..\shared\re4_inventory.cpp" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

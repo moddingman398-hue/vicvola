@@ -5,7 +5,7 @@
 //=============================================================================//
 
 #include "cbase.h"
-
+#include "npc_gibbing_ext.h" // up top
 #include "ai_basenpc.h"
 #include "fmtstr.h"
 #include "activitylist.h"
@@ -1123,7 +1123,7 @@ int CAI_BaseNPC::OnTakeDamage_Alive( const CTakeDamageInfo &info )
 	
 		NotifyFriendsOfDamage( info.GetAttacker() );
 	}
-
+	MB_ApplyLimbDamageGibbing(this, info, LastHitGroup());
 	// ---------------------------------------------------------------
 	//  Insert a combat sound so that nearby NPCs know I've been hit
 	// ---------------------------------------------------------------

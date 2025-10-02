@@ -387,7 +387,9 @@ exit 1
     <ClInclude Include="..\..\game\shared\weapon_parse.h" />
     <ClInclude Include="..\..\game\shared\weapon_proficiency.h" />
     <ClInclude Include="..\shared\freeaim_weapon_iface.h" />
+    <ClInclude Include="..\shared\melee_classes.h" />
     <ClInclude Include="..\shared\player_legs.h" />
+    <ClInclude Include="..\shared\re4_inventory.h" />
     <ClInclude Include="..\shared\weapon_base_fa.h" />
     <ClInclude Include="..\shared\weapon_pistol_fa.h" />
     <ClInclude Include="..\shared\weapon_smg_fa.h" />
@@ -897,11 +899,15 @@ exit 1
     <ClInclude Include="toolframework_client.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\shared\re4_inventory.cpp" />
     <ClCompile Include="..\shared\weapon_base_fa.cpp" />
     <ClCompile Include="..\shared\weapon_pistol_fa.cpp" />
     <ClCompile Include="..\shared\weapon_smg_fa.cpp" />
     <ClCompile Include="cl_freeaim_firstperson.cpp" />
     <ClCompile Include="cl_freeaim_integration.cpp" />
+    <ClCompile Include="c_ads_helpers.cpp" />
+    <ClCompile Include="c_inventory_panel.cpp" />
+    <ClCompile Include="c_sse_manager.cpp" />
     <ClCompile Include="fa_kick_input.cpp" />
     <ClCompile Include="hud_crosshair_override.cpp" />
     <ClCompile Include="hud_freeaim_debug.cpp" />

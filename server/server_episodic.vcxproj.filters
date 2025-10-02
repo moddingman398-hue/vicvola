@@ -1884,6 +1884,11 @@
     <ClInclude Include="npc_damageresponse.h" />
     <ClInclude Include="..\shared\convar_firstperson.h" />
     <ClInclude Include="..\shared\player_legs.h" />
+    <ClInclude Include="env_spike_impaler.h" />
+    <ClInclude Include="improv_melee_pickup.h" />
+    <ClInclude Include="npc_gibbing_ext.h" />
+    <ClInclude Include="..\shared\melee_classes.h" />
+    <ClInclude Include="..\shared\re4_inventory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gamedll_replay.cpp">
@@ -3773,6 +3778,11 @@
     <ClCompile Include="fa_kick_hold.cpp" />
     <ClCompile Include="npc_damageresponse.cpp" />
     <ClCompile Include="player_legs.cpp" />
+    <ClCompile Include="env_spike_impaler.cpp" />
+    <ClCompile Include="improv_melee_pickup.cpp" />
+    <ClCompile Include="npc_gibbing_ext.cpp" />
+    <ClCompile Include="vault_slide_movement.cpp" />
+    <ClCompile Include="..\shared\re4_inventory.cpp" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

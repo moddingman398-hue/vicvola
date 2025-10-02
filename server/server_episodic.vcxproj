@@ -268,7 +268,9 @@ exit 1
     <ClInclude Include="..\..\game\shared\base_playeranimstate.h" />
     <ClInclude Include="..\shared\convar_firstperson.h" />
     <ClInclude Include="..\shared\freeaim_weapon_iface.h" />
+    <ClInclude Include="..\shared\melee_classes.h" />
     <ClInclude Include="..\shared\player_legs.h" />
+    <ClInclude Include="..\shared\re4_inventory.h" />
     <ClInclude Include="..\shared\weapon_base_fa.h" />
     <ClInclude Include="..\shared\weapon_pistol_fa.h" />
     <ClInclude Include="..\shared\weapon_smg_fa.h" />
@@ -313,6 +315,7 @@ exit 1
     <ClInclude Include="..\..\game\shared\entitydatainstantiator.h" />
     <ClInclude Include="..\..\game\shared\entitylist_base.h" />
     <ClInclude Include="..\..\game\shared\env_detail_controller.h" />
+    <ClInclude Include="env_spike_impaler.h" />
     <ClInclude Include="EventLog.h" />
     <ClInclude Include="..\..\game\shared\expressionsample.h" />
     <ClInclude Include="..\..\public\tier0\fasttimer.h" />
@@ -377,6 +380,7 @@ exit 1
     <ClInclude Include="..\..\public\tier1\KeyValues.h" />
     <ClInclude Include="..\..\public\tier0\l2cache.h" />
     <ClInclude Include="..\..\common\language.h" />
+    <ClInclude Include="improv_melee_pickup.h" />
     <ClInclude Include="logicrelay.h" />
     <ClInclude Include="..\..\public\map_utils.h" />
     <ClInclude Include="mapentities.h" />
@@ -390,6 +394,7 @@ exit 1
     <ClInclude Include="..\..\game\shared\mp_shareddefs.h" />
     <ClInclude Include="..\..\public\networkvar.h" />
     <ClInclude Include="npc_damageresponse.h" />
+    <ClInclude Include="npc_gibbing_ext.h" />
     <ClInclude Include="npc_vehicledriver.h" />
     <ClInclude Include="..\..\game\shared\npcevent.h" />
     <ClInclude Include="..\..\public\vphysics\object_hash.h" />
@@ -870,9 +875,11 @@ exit 1
     <ClInclude Include="toolframework_server.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\shared\re4_inventory.cpp" />
     <ClCompile Include="..\shared\weapon_base_fa.cpp" />
     <ClCompile Include="..\shared\weapon_pistol_fa.cpp" />
     <ClCompile Include="..\shared\weapon_smg_fa.cpp" />
+    <ClCompile Include="env_spike_impaler.cpp" />
     <ClCompile Include="fa_kick_hold.cpp" />
     <ClCompile Include="gamedll_replay.cpp" />
     <ClCompile Include="..\..\game\shared\achievement_saverestore.cpp" />
@@ -1112,6 +1119,7 @@ exit 1
     <ClCompile Include="..\..\game\shared\hintsystem.cpp" />
     <ClCompile Include="hltvdirector.cpp" />
     <ClCompile Include="..\..\game\shared\igamesystem.cpp" />
+    <ClCompile Include="improv_melee_pickup.cpp" />
     <ClCompile Include="info_camera_link.cpp" />
     <ClCompile Include="info_overlay_accessor.cpp" />
     <ClCompile Include="init_factory.cpp">
@@ -1170,6 +1178,7 @@ exit 1
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="npc_damageresponse.cpp" />
+    <ClCompile Include="npc_gibbing_ext.cpp" />
     <ClCompile Include="npc_vehicledriver.cpp" />
     <ClCompile Include="..\..\game\shared\obstacle_pushaway.cpp" />
     <ClCompile Include="particle_light.cpp" />
@@ -1319,6 +1328,7 @@ exit 1
     <ClCompile Include="util.cpp" />
     <ClCompile Include="..\..\game\shared\util_shared.cpp" />
     <ClCompile Include="variant_t.cpp" />
+    <ClCompile Include="vault_slide_movement.cpp" />
     <ClCompile Include="vehicle_base.cpp" />
     <ClCompile Include="vehicle_baseserver.cpp" />
     <ClCompile Include="vehicle_choreo_generic.cpp" />
